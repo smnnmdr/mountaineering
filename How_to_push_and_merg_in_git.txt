@@ -1,0 +1,7 @@
+git remote add origin https://github.com/smnnmdr/mountaineering.git
+git init
+git add README.md
+git add --all
+git commit -m "First commit" 
+git branch -M main
+git push -u origin main
