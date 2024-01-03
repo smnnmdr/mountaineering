@@ -1,7 +1,7 @@
 import React from "react";
 import MainCardList from "./MainCardList";
 import CategoryList from "./CategoryList";
-
+import MainLatestEvents from "./MainLatestEvents";
 const MainPage = () => {
   return (
     <>
@@ -25,6 +25,12 @@ const MainPage = () => {
           <h1>Top categories for you</h1>
           <CategoryList />
         </div>
+      </section>
+      <section className="bg-white	">
+        <div>
+          <h1>The latest Event's for you </h1>
+        </div>
+        <MainLatestEvents />
       </section>
     </>
   );

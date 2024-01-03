@@ -5,7 +5,7 @@ interface ICategoryProps {
   categorytitle: string;
   href: string;
 }
-const CategoryList = ({ imageSrc, categorytitle }: ICategoryProps) => {
+const CategoryList = () => {
   const categoryListData: ICategoryProps[] = [
     {
       imageSrc: "a_1.png",
