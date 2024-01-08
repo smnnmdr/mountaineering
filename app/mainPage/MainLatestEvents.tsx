@@ -1,32 +1,36 @@
 import React from "react";
-
+import LetestEventCard from "./LetestEventCard";
+interface LatestModel {
+  src: string;
+  description: string;
+}
 const MainLatestEvents = () => {
+  const mock: LatestModel[] = [
+    {
+      src: "adventure_pic2.png",
+      description: ` Brimming with natural treasures, the Golden State has the perfect
+          adventure for you: beachfront backpacking, Death Valley cycling,
+          snowshoe touring and so much more!`,
+    },
+    {
+      src: "adventure_pic.png",
+      description: ` Brimming with natural treasures, the Golden State has the perfect
+          adventure for you: beachfront backpacking, Death Valley cycling,
+          snowshoe touring and so much more!`,
+    },
+  ];
+
   return (
-    <div className="">
-      <div className="">
-        <div>
-          <img src="adventure_pic.png" />
-        </div>
-        <div>
-          <p>
-            Incomparably scenic, and unlike anywhere else in the world, the
-            wonders of America’s Southwest can hardly be put into words. Just
-            go!
-          </p>
-        </div>
-      </div>
-      <div className="">
-        <div>
-          <img src="adventure_pic2.png" />
-        </div>
-        <div>
-          <p>
-            Brimming with natural treasures, the Golden State has the perfect
-            adventure for you: beachfront backpacking, Death Valley cycling,
-            snowshoe touring and so much more!
-          </p>
-        </div>
-      </div>
+    <div className="flex flex-row	justify-center	items-center	">
+      {mock.map((item, key) => {
+        return (
+          <LetestEventCard
+            src={item.src}
+            description={item.description}
+            key={key}
+          />
+        );
+      })}
     </div>
   );
 };

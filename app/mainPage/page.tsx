@@ -14,23 +14,16 @@ const MainPage = () => {
         </div>
       </section>
       <section className="bg-white	">
-        <div
-          style={{
-            maxWidth: "1400px",
-            width: "1400px",
-            marginLeft: "auto",
-            marginRight: "auto",
-          }}
-        >
+        <div className="mx-auto max-w-screen-xl">
           <h1>Top categories for you</h1>
           <CategoryList />
         </div>
       </section>
       <section className="bg-white	">
-        <div>
+        <div className="mx-auto max-w-screen-xl">
           <h1>The latest Event's for you </h1>
+          <MainLatestEvents />
         </div>
-        <MainLatestEvents />
       </section>
     </>
   );
